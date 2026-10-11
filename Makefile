@@ -1,12 +1,12 @@
-CXX = g++
-CXXFLAGS = -std=c++17 -Wall -Wextra -O2
+CC = gcc
+CFLAGS = -std=c11 -Wall -Wextra -O2
 TARGET = code
-SOURCE = riscv_simulator.cpp
+SOURCE = riscv_simulator.c
 
 all: $(TARGET)
 
 $(TARGET): $(SOURCE)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SOURCE)
+	$(CC) $(CFLAGS) -o $(TARGET) $(SOURCE)
 
 clean:
 	rm -f $(TARGET)
