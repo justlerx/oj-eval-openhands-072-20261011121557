@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -std=c11 -Wall -Wextra -O2
 TARGET = code
-SOURCE = riscv_simulator.c
+SOURCE = main.c
 
 all: $(TARGET)
 
